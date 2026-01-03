@@ -152,3 +152,5 @@ eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 . "$HOME/.local/bin/env"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 . "$HOME/.local/bin/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
