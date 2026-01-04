@@ -87,7 +87,7 @@ alias la="eza -alh --all --classify=auto --git --show-symlinks --icons=always"
 alias ls="eza -lh --show-symlinks --icons=always --no-filesize --no-permissions --time-style relative"
 
 # [git]
-alias lg="eza -alh --classify=auto --git --git-repos --show-symlinks --cns=always --no-permissions --no-filesize --time-style relative"
+alias lg="eza -alh --classify=auto --git --git-repos --show-symlinks --icons=always --no-permissions --no-filesize --time-style relative"
 
 # [Tree simplified]
 alias lt="eza -alhT --classify=auto --show-symlinks --icons=always --time-style relative "
