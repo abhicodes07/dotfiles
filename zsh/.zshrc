@@ -93,7 +93,7 @@ alias lg="eza -alh --classify=auto --git --git-repos --show-symlinks --icons=alw
 alias lt="eza -alhT --classify=auto --show-symlinks --icons=always --time-style relative "
 
 # [Tree Full]
-alias lta="eza -alhT --classify=auto --git --git-repos -show-symlinks --icons=always --total-size --time-style relative"
+alias lta="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --total-size --time-style relative"
 
 # [git tree]
 alias ltg="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --no-permissions --no-user --total-size --time-style relative"
