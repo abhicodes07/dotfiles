@@ -105,4 +105,5 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 . "$HOME/.local/bin/env"
 
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
