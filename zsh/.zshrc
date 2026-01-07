@@ -4,6 +4,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export EDITOR="nvim"
 
 # eza theme
 export EZA_CONFIG_DIR="$HOME/.config/eza"
