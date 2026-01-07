@@ -1,0 +1,3 @@
+[submodule "Lazyvim/.config/Lazyvim"]
+	path = Lazyvim/.config/Lazyvim
+	url = https://github.com/abhicodes07/Lazyvim.git
