@@ -37,10 +37,10 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting) #zsh-autosuggestion zs
 source $ZSH/oh-my-zsh.sh
 
 # === for neovim config switcher ===
-alias lazy="NVIM_APPNAME=LazyVim nvim"
+alias lazy="NVIM_APPNAME=Lazyvim nvim"
 
 function nvims() {
-  items=("default" "LazyVim")
+  items=("default" "Lazyvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config 💤 >> " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z config ]]; then
     echo "Nothing Selected ☹️"
