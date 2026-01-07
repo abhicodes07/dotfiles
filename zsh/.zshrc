@@ -10,6 +10,9 @@ export EZA_CONFIG_DIR="$HOME/.config/eza"
 unset LS_COLORS
 unset EZA_COLORS
 
+# yazi config
+export YAZI_CONFIG_HOME="$HOME/.config/yazi"
+
 # Path win32yank
 export PATH="$HOME/.local/bin:$PATH"
 
