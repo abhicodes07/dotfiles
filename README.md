@@ -28,36 +28,41 @@ These configurations are designed for my personal use but can serve as a useful 
 - \>\_ Sleek **Terminal** Config
 - 🎨 **Oh My Posh** Prompt Style
 - ⚙️ [**WSL2**](https://learn.microsoft.com/en-us/windows/wsl/) Integration
-- 💫 Beautiful [**Wallpapers**](https://github.com/ashish0kumar/windots/tree/main/walls#readme)
+- 💫 Beautiful [**Wallpapers**]()
 - 🐈 **Soothing themes** everywhere
 - 💤 **Neovim** config switcher
 
 ## 🔧 Tools Suite
 
-| **Lazyvim**                                       | **Yazi**                                        |
-| ------------------------------------------------- | ----------------------------------------------- |
-| <img src="assets/config.png" alt="Lazyvim"></img> | <img src="assets/yazi.png" alt="Lazyvim"></img> |
+| **Lazyvim**          | **Yazi**             |
+| -------------------- | -------------------- |
+| ![](assets/lazy.png) | ![](assets/yazi.png) |
 
-| **FZF**                                        | **Btop**                                        |
-| ---------------------------------------------- | ----------------------------------------------- |
-| <img src="assets/fzf.png" alt="Lazyvim"></img> | <img src="assets/btop.png" alt="Lazyvim"></img> |
+| **FZF**             | **Btop**             |
+| ------------------- | -------------------- |
+| ![](assets/fzf.png) | ![](assets/btop.png) |
+
+| **Lazygit**             | **Telescope find files**  |
+| ----------------------- | ------------------------- |
+| ![](assets/lazygit.png) | ![](assets/telescope.png) |
 
 Here is all the information about my setup and tools:
 
-> [!NOTE]
+> [!TIP]
 >
-> Some of these apps have the **config files** included in the repo, which are marked with ⚙️
+> Some of these tools have the **config files** included in the repo, which are marked with ⚙️,
+> so you can **Cherry-pick** what you need.
 
 <details>
 <summary><b>🌟 Core Development</b></summary>
 <br>
 
-| ⛓️ Tool                                     | 📝 Description            | ✨ Features                                                                                                    | ⚙️ Config                                                                     |
-| ------------------------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| 💤 [**Lazyvim**](http://www.lazyvim.org/)   | **Lazyvim configuration** | • IDE-like features<br>• Modern Tools<br>• Soothing Multiple Themes                                            | [**⚙️ nvim**](https://github.com/abhicodes07/dotfiles/nvim/.config/nvim)      |
-| 🚀 [**ohmyposh**](https://ohmyposh.dev/)    | **Cross-shell Prompt**    | • Nocturnal theme<br>• Git status integration<br>• Context-aware display                                       |                                                                               |
-| 🖥️ [**Tmux**](https://github.com/tmux/tmux) | **Terminal multiplexer**  | • Custom key bindings<br>• Catppuccin Theme<br>• Nerd Icons                                                    | [**⚙️ tmux.conf**](https://github.com/abhicodes07/dotfiles/tmux/.config/tmux) |
-| \>\_ [**Zsh**](https://zsh.sourceforge.io/) | **Shell**                 | • Smart shell detection and adaptation<br>• Enhanced history with timestamps<br>• Modern CLI tools integration | [**⚙️ .zshrc**](https://github.com/abhicodes07/dotfiles/zsh/.config/.zshrc)   |
+| ⛓️ Tool                                     | 📝 Description            | ✨ Features                                                                                                    | ⚙️ Config                                                                  |
+| ------------------------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| 💤 [**Lazyvim**](http://www.lazyvim.org/)   | **Lazyvim configuration** | • IDE-like features<br>• Modern Tools<br>• Soothing Multiple Themes                                            | [**⚙️ Lazyvim**](https://github.com/abhicodes07/Lazyvim.git)               |
+| 🚀 [**ohmyposh**](https://ohmyposh.dev/)    | **Cross-shell Prompt**    | • Nocturnal theme<br>• Git status integration<br>• Context-aware display                                       |                                                                            |
+| 🖥️ [**Tmux**](https://github.com/tmux/tmux) | **Terminal multiplexer**  | • Custom key bindings<br>• Catppuccin Theme<br>• Nerd Icons                                                    | [**⚙️ tmux.conf**](https://github.com/abhicodes07/dotfiles/tree/main/tmux) |
+| \>\_ [**Zsh**](https://zsh.sourceforge.io/) | **Shell**                 | • Smart shell detection and adaptation<br>• Enhanced history with timestamps<br>• Modern CLI tools integration | [**⚙️ .zshrc**](https://github.com/abhicodes07/dotfiles/tree/main/zsh/)    |
 
 </details>
 
@@ -65,16 +70,16 @@ Here is all the information about my setup and tools:
 <summary><b>🏠 Modern CLI/TUI Apps</b></summary>
 <br>
 
-| ⛓️ Tool                                                        | 📝 Description     | ✨ Features                                                       | ⚙️ Config                                                                                  |
-| -------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 🌱 [**FZF**](https://github.com/junegunn/fzf)                  | **Fuzzy finder**   | • File searching<br>• History exploration<br>• Neovim Integration |                                                                                            |
-| 📂 [**Eza**](https://github.lazyvim_config/eza-community/eza)  | Modern **ls**      | • Icon support<br>• Multiple Themes<br>• Custom Alias             | [**⚙️ theme.yml**](https://github.com/abhicodes07/dotfiles/eza/.config/eza)                |
-| ℹ️ [**Bat**](https://github.com/sharkdp/bat)                   | Better **cat**     | • Syntax highlighting<br>• Multiple themes<br>• Line numbers      |                                                                                            |
-| 📜 [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) | **System Fetch**   |                                                                   | [**⚙️ config.jsonc**](https://github.com/abhicodes07/dotfiles/fastfetch/.config/fastfetch) |
-| 🎨 [**Btop**](https://github.com/aristocratos/btop)            | **System Monitor** |                                                                   |                                                                                            |
-| 📊 [**Git**](https://git-scm.com/)                             | **Versioning**     |                                                                   | [**⚙️ .gitconfig**](https://github.com/abhicodes07/dotfiles/git/.gitconfig)                |
-| 🗃️ [**Yazi**](https://yazi-rs.github.io/)                      | **File Manager**   |                                                                   |                                                                                            |
-| 🧩 [**Zoxide**](https://github.com/ajeetdsouza/zoxide)         | **cd** Replacement |                                                                   |                                                                                            |
+| ⛓️ Tool                                                        | 📝 Description     | ✨ Features                                                       | ⚙️ Config                                                                                            |
+| -------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 🌱 [**FZF**](https://github.com/junegunn/fzf)                  | **Fuzzy finder**   | • File searching<br>• History exploration<br>• Neovim Integration |                                                                                                      |
+| 📂 [**Eza**](https://github.lazyvim_config/eza-community/eza)  | Modern **ls**      | • Icon support<br>• Multiple Themes<br>• Custom Alias             | [**⚙️ theme.yml**](https://github.com/abhicodes07/dotfiles/tree/main/eza/.config/eza)                |
+| ℹ️ [**Bat**](https://github.com/sharkdp/bat)                   | Better **cat**     | • Syntax highlighting<br>• Multiple themes<br>• Line numbers      |                                                                                                      |
+| 📜 [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) | **System Fetch**   |                                                                   | [**⚙️ config.jsonc**](https://github.com/abhicodes07/dotfiles/tree/main/fastfetch/.config/fastfetch) |
+| 🎨 [**Btop**](https://github.com/aristocratos/btop)            | **System Monitor** |                                                                   | [**⚙️ btop**](https://github.com/abhicodes07/dotfiles/tree/main/fastfetch/.config/btop)              |
+| 📊 [**Git**](https://git-scm.com/)                             | **Versioning**     |                                                                   | [**⚙️ .gitconfig**](https://github.com/abhicodes07/dotfiles/tree/main/git)                           |
+| 🗃️ [**Yazi**](https://yazi-rs.github.io/)                      | **File Manager**   |                                                                   | [**⚙️ yazi**](https://github.com/abhicodes07/dotfiles/tree/main/yazi/.config/yazi)                   |
+| 🧩 [**Zoxide**](https://github.com/ajeetdsouza/zoxide)         | **cd** Replacement |                                                                   |                                                                                                      |
 
 </details>
 
@@ -89,6 +94,163 @@ Here is all the information about my setup and tools:
 | **Dotfiles Manager** | [**GNU Stow**](https://www.gnu.org/software/stow/)                                                                                                                                                                                                                                                                                                                                                                 |
 
 </details>
+
+## 🔡 Installing Nerd Fonts
+
+Nerd Fonts are required for special icons display in the terminal for aesthetic look. Follow
+these steps to install them:
+
+1. Visit the [**Nerd Fonts website**](https://www.nerdfonts.com/)
+2. Download your preferred font (on windows)
+
+> ✨ JetBrainsMono Nerd Font recommended
+
+3. Extract the downloaded zip file
+4. Install the fonts for WSL2:
+   - On Windows: Select all `.ttf` file, Right-click on each and select "Install for all users"
+5. Configure your terminal to use the installed Nerd Font in Windows terminal settings.
+
+For WSL2 users, make sure to set the Nerd Font in your Windows Terminal settings as well.
+
+## 🛠️ Setup
+
+> [!NOTE]
+> Ensure you have Git, GNU Stow, and the required tools installed on your system before proceeding.
+
+<details>
+<summary><b>📥 Cloning the Repository</b></summary>
+<br>
+
+- Clone the `dotfiles` repository along with its submodules:
+
+```bash
+git clone --recursive https://github.com/abhicodes07/dotfiles ~/dotfiles
+```
+
+- If you have already cloned it without submodules initialized, run:
+
+```bash
+cd ~/dotfiles
+git submodule init
+git submodule update
+```
+
+</details>
+
+<details>
+<summary><b>🏗️ Setting Up Dotfiles Using GNU Stow</b></summary>
+<br>
+
+- GNU Stow simplifies managing dotfiles across different directories. Each subdirectory of `~/dotfiles` contains configurations for specific tools.
+
+### Step 1: Navigate to the Repository
+
+```bash
+cd ~/dotfiles
+```
+
+### Step 2: Remove Existing Configuration Files
+
+- Before stowing files, ensure conflicting configuration files are removed or backed up:
+
+```bash
+rm -rf ~/.config/Lazyvim
+rm -rf ~/.zshrc ~/.bashrc
+```
+
+### Step 3: Symlink Dotfiles to Relevant Directories
+
+- Use GNU Stow to create symlinks for configuration files:
+
+```bash
+stow -t ~/ bash
+stow -t ~/ zsh
+stow -t ~/.config Lazyvim
+```
+
+- Use the similar commands for the other configurations too.
+
+Here:
+
+- `-t` specifies the target directory (e.g., `~/`, or `~/.config`).
+</details>
+
+<details>
+<summary><b>🔄 Updating Dotfiles and Submodules</b></summary>
+
+### Update Dotfiles Repository
+
+- Sync your dotfiles with the latest changes:
+
+```bash
+cd ~/dotfiles
+git pull
+```
+
+### Update Submodules (Lazyvim)
+
+- Fetch the latest changes to submodules:
+
+```bash
+cd ~/dotfiles
+git submodule update --remote Lazyvim
+```
+
+</details>
+
+<details>
+<summary><b>🧹 Unstowing Dotfiles</b></summary>
+<br>
+
+- If you want to remove all symlinks:
+
+```bash
+stow -D -t ~/ bash
+stow -D -t ~/ zsh
+stow -D -t ~/.config Lazyvim
+```
+
+</details>
+
+## 🚀 Insights
+
+### 🐚 Shell Environment
+
+```bash
+la          # Aesthetic file listing with beautiful icons
+ls          # Simple file listing with icons
+lg          # Git files
+lta         # Tree file listing with icons
+ltg         # Git tree files with icons
+fzf         # Fuzzy finder
+yazi        # file manager
+```
+
+**🪄 Key Features:**
+
+- Better tab completion with fuzzy finding
+- Directory jumping with `z` command and bookmarking system
+- Cross-platform environment variables and platform detection
+- Files, PDFs and image viewing using `yazi`
+- Aesthetic file listing with `eza` enabled aliases
+
+### 💤 Neovim config switcher
+
+- Switch between multiple **Neovim** configurations using custom script and `nvims` command
+
+![](assets/nvims.png)
+
+## ❓ FAQs and Notes
+
+1. **Why Use GNU Stow?**
+   - Maintains a clean structure for your dotfiles repository.
+   - Allows modular management of configurations by stowing specific folders only.
+
+2. **Submodule Handling**
+   - Submodules must be cloned recursively and updated separately. Any changes to the Lazyvim folder must be committed in its own repository and tracked by the `dotfiles`.
+
+3. **Clone Instructions for Fresh Installs**
+   - Ensure you always clone using `--recursive` or run the commands to initialize the submodule afterwards.
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
