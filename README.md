@@ -240,6 +240,11 @@ yazi        # file manager
 
 ![](assets/nvims.png)
 
+## 📢 Discussions
+
+Have a question, idea, or a cool setup to share? Or maybe you're running into an issue? <br>
+Head over to the [Discussions](https://github.com/abhicodes07/dotfiles/discussions) section.
+
 ## ❓ FAQs and Notes
 
 1. **Why Use GNU Stow?**
