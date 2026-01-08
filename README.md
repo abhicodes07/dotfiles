@@ -34,9 +34,9 @@ These configurations are designed for my personal use but can serve as a useful 
 
 ## 🔧 Tools Suite
 
-| **Lazyvim**          | **Yazi**             |
-| -------------------- | -------------------- |
-| ![](assets/lazy.png) | ![](assets/yazi.png) |
+| **Lazyvim**            | **Yazi**             |
+| ---------------------- | -------------------- |
+| ![](assets/config.png) | ![](assets/yazi.png) |
 
 | **FZF**             | **Btop**             |
 | ------------------- | -------------------- |
