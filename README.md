@@ -34,17 +34,44 @@ These configurations are designed for my personal use but can serve as a useful 
 
 ## 🔧 Tools Suite
 
-| **Lazyvim**            | **Yazi**             |
-| ---------------------- | -------------------- |
-| ![](assets/config.png) | ![](assets/yazi.png) |
-
-| **FZF**             | **Btop**             |
-| ------------------- | -------------------- |
-| ![](assets/fzf.png) | ![](assets/btop.png) |
-
-| **Lazygit**             | **Telescope find files**  |
-| ----------------------- | ------------------------- |
-| ![](assets/lazygit.png) | ![](assets/telescope.png) |
+<table width="100%">
+  <tr>
+    <th>Lazyvim</th>
+    <th>Yazi</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="assets/config.png" />
+    </td>
+    <td width="50%">
+      <img src="assets/yazi.png" />
+    </td>
+  </tr>
+  <tr>
+    <th>FZF</th>
+    <th>Btop</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="assets/fzf.png" />
+    </td>
+    <td width="50%">
+      <img src="assets/btop.png" />
+    </td>
+  </tr>
+  <tr>
+    <th>Lazygit</th>
+    <th>Telescope find files</th>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="assets/lazygit.png" />
+    </td>
+    <td width="50%">
+      <img src="assets/telescope.png" />
+    </td>
+  </tr>
+</table>
 
 Here is all the information about my setup and tools:
 
