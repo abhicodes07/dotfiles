@@ -25,5 +25,7 @@ return {
   -- 		},
   -- 	},
   -- },
-  { import = "plugins.override.mason"},
+  { import = "plugins.disabled" },
+  { import = "plugins.override"},
+  { import = "plugins.custom"},
 }
