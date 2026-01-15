@@ -41,12 +41,12 @@ source $ZSH/oh-my-zsh.sh
 alias lazy="NVIM_APPNAME=Lazyvim nvim"
 
 function nvims() {
-  items=("default" "Lazyvim")
+  items=(" NvChad" "Lazyvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config 💤 >> " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z config ]]; then
     echo "Nothing Selected ☹️"
     return 0
-  elif [[ $config == "default" ]]; then
+  elif [[ $config == " NvChad" ]]; then
     config=""
   fi
   NVIM_APPNAME=$config nvim $@
