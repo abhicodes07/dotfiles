@@ -4,6 +4,8 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 local nomap = vim.keymap.del
+-- local discipline = require("custom.discipline")
+-- discipline.cowboy()
 
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 
@@ -14,7 +16,7 @@ map("i", "jk", "<ESC>")
 
 -- Custom mappings
 -- split window
-map("n", "<leader>sz", ":split<Return>", { desc = "Split Horizontal" })
+map("n", "<leader>sh", ":split<Return>", { desc = "Split Horizontal" })
 map("n", "<leader>sv", ":vsplit<Return>", { desc = "Split Vertical" })
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
@@ -84,9 +86,12 @@ map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" }
 -- format
 nomap({ "n", "x" }, "<leader>fm")
 
-map({ "n", "x" }, "<leader>cm", function()
+map({ "n", "x" }, "<leader>cf", function()
   require("conform").format { lsp_fallback = true }
 end, { desc = "general format file" })
+
+-- mason
+map("n", "<leader>cm", "<cmd>Mason<CR>", { desc = "Mason" })
 
 -- telescope git commits
 map("n", "<leader>fc", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
