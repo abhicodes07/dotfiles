@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="assets/lazy.png" alt="Lazyvim"></img>
+  <img src="assets/neovim.png" alt="neovim"></img>
 </div>
 
 ## 🌺 About
