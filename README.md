@@ -1,7 +1,7 @@
 <h1 align="center"> 🍵 Dotfiles </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Editor-Lazyvim%20%7C%20Neovim-CBA6F7?style=for-the-badge&logo=neovim&logoColor=cdd6f4&logoSize=auto&labelColor=302D41&color=90e0ef">
+  <img src="https://img.shields.io/badge/Editor-Lazyvim%20%7C%20NvChad-CBA6F7?style=for-the-badge&logo=neovim&logoColor=cdd6f4&logoSize=auto&labelColor=302D41&color=90e0ef">
   <img alt="Static Badge" src="https://img.shields.io/badge/shell-zsh%20%7C%20bash-f5c2e7?style=for-the-badge&logo=GNU%20bash&logoColor=cdd6f4&labelColor=302D41">
   <img alt="Static Badge" src="https://img.shields.io/badge/os-windows%20%7C%20WSL%20%7C%20Linux-cba6f7?style=for-the-badge&logo=linux&logoColor=cdd6f4&labelColor=302D41">
   <img alt="Static Badge" src="https://img.shields.io/badge/prompt-oh%20my%20posh-b4befe?style=for-the-badge&logo=starship&logoColor=cdd6f4&labelColor=302D41">
