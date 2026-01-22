@@ -104,8 +104,10 @@ alias ltg="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=a
 
 
 # oh-my-posh
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+# eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
+
+# starship
+eval "$(starship init zsh)"
 
 . "$HOME/.local/bin/env"
 
