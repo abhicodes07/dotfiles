@@ -4,7 +4,6 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export EDITOR="nvim"
 
 # eza theme
 export EZA_CONFIG_DIR="$HOME/.config/eza"
@@ -13,6 +12,7 @@ unset EZA_COLORS
 
 # yazi config
 export YAZI_CONFIG_HOME="$HOME/.config/yazi"
+export EDITOR="nvim"
 
 # Path win32yank
 export PATH="$HOME/.local/bin:$PATH"
@@ -26,7 +26,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # zstyle ':omz:update' frequency 13
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="/home/abhipc/.config/zsh/"
+ZSH_CUSTOM="/home/abhi9av/.config/zsh/"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -94,20 +94,26 @@ alias ls="eza -lh --show-symlinks --icons=always --no-filesize --no-permissions 
 alias lg="eza -alh --classify=auto --git --git-repos --show-symlinks --icons=always --no-permissions --no-filesize --time-style relative"
 
 # [Tree simplified]
-alias lt="eza -alhT --classify=auto --show-symlinks --icons=always --time-style relative "
+alias lt="eza -alhT --classify=auto --show-symlinks --icons=always --ignore-glob='.git|.venv' --time-style relative "
+
+# [Tree simplified (only directories)]
+alias ltd="eza -ahTD --classify=auto --show-symlinks --no-permissions --no-filesize --no-user --icons=always --ignore-glob='.git|.venv' --time-style relative "
 
 # [Tree Full]
-alias lta="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --total-size --time-style relative"
+alias lta="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --ignore-glob='.git|.venv' --total-size --time-style relative"
 
 # [git tree]
-alias ltg="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --no-permissions --no-user --total-size --time-style relative"
+alias ltg="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=always --ignore-glob='.git|.venv' --no-permissions --no-user --total-size --time-style relative"
 
 
 # oh-my-posh
-# eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
 
 # starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+
+# zoxide
+eval "$(zoxide init zsh)"
 
 . "$HOME/.local/bin/env"
 
