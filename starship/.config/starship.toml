@@ -2,17 +2,21 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[╭](lavender)\
+[╭](purple)\
 $os\
 $username\
-[ ](fg:lavender)\
+[](fg:purple bg:mauve)\
 $directory\
+[](fg:mauve)\
+$lua\
+$python\
 $cmd_duration
-[╰ ](fg:lavender)$character\
+[╰ ](fg:purple)$character\
 """
 
 right_format = """
 $git_branch\
+$git_status\
 $time\
 """
 
@@ -24,11 +28,93 @@ add_newline = true
 [character]
 success_symbol = '[](bold green)'
 error_symbol = '[](bold red)'
+vimcmd_symbol = "[■](italic dimmed green)"
 
 [os]
 disabled = false
 format = '[$symbol ]($style)'
-style = 'bg:lavender fg:crust'
+style = 'bg:purple fg:crust'
+
+[username]
+disabled = false
+format = '[$user]($style)'
+style_user = 'bold bg:purple fg:crust'
+show_always = true
+
+[time]
+disabled = false
+time_format = "%I:%M"
+format = '[ $time]($style) '
+utc_time_offset = "local"
+use_12hr = true
+style = 'italic dimmed lavender'
+
+[directory]
+style = "fg:crust bg:mauve"
+format = "[$path]($style)"
+home_symbol = ' 󰜥 '
+truncation_length = 3
+truncation_symbol = "  /"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Developer" = " "
+
+[git_branch]
+symbol = ""
+style = "bold italic cyan"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+format = "([⎪$modified$untracked$staged$deleted$ahead$behind$renamed$stashed ⎪]($style))"
+style = "dimmed grey bold"
+ahead = "[⎪  ($count)](bold flamingo)"
+behind = "[  ($count)](bold pink)"
+modified = "[  ($count)](bold green)"
+untracked = "[ 󰸳 ($count)](bold orange)"
+staged = "[ 󰍌 ($count)](bold blue5)"
+renamed = "[⎪  ($count)](bold sapphire)"
+stashed = '[  ($count)](bold sky)'
+deleted = "[  ($count)](bold magenta)"
+typechanged = ""
+disabled = false
+ignore_submodules = false
+
+[git_metrics]
+added_style = "bold green"
+deleted_style = "bold red"
+ignore_submodules = false
+disabled = true
+format = "([ $added]($added_style) )([ $deleted]($deleted_style) )"
+
+[cmd_duration]
+show_milliseconds = true
+format = "[  $duration ]($style)"
+style = "bold blue6"
+disabled = false
+show_notifications = true
+min_time_to_notify = 35000
+
+[conda]
+symbol = "  "
+style = "fg:crust bg:sapphire"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
+
+[python]
+symbol = " "
+style = "bold italic blue5"
+format = '[ $symbol($version)( \(󰌪 $virtualenv\))]($style)'
+
+[lua]
+disabled = false
+format = " [${symbol}${version}]($style)"
+version_format = "v${raw}"
+symbol = " "
+style = "bold blue2"
 
 [os.symbols]
 Windows = ""
@@ -51,46 +137,6 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-
-[username]
-disabled = false
-format = '[$user]($style)'
-style_user = 'bg:lavender fg:crust'
-show_always = true
-
-[time]
-disabled = false
-time_format = "%I:%M %p"
-format = '[ $time]($style) '
-use_12hr = true
-style = 'fg:lavender'
-
-[directory]
-style = "fg:mauve"
-format = "[$path]($style)"
-home_symbol = '󰜥'
-truncation_length = 3
-truncation_symbol = " /"
-
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"Developer" = " "
-
-[git_branch]
-symbol = ""
-style = "bold red"
-format = "[$symbol $branch ]($style)"
-
-[cmd_duration]
-show_milliseconds = true
-format = "[   in $duration ]($style)"
-style = "bold lavender"
-disabled = false
-show_notifications = true
-min_time_to_notify = 35000
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -119,3 +165,24 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
+
+tgreen = "#9ece6a"
+green1 = "#73daca"
+green2 = "#41a6b5"
+magenta = "#bb9af7"
+magenta2 = "#ff007c"
+orange = "#ff9e64"
+purple = "#9d7cd8"
+tred = "#f7768e"
+tred1 = "#db4b4b"
+tteal = "#1abc9c"
+tyellow = "#e0af68"
+
+cyan = "#7dcfff"
+tblue = "#7aa2f7"
+blue0 = "#3d59a1"
+blue1 = "#2ac3de"
+blue2 = "#0db9d7"
+blue5 = "#89ddff"
+blue6 = "#b4f9f8"
+blue7 = "#394b70"
