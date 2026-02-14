@@ -10,6 +10,11 @@ $directory\
 [](fg:mauve)\
 $lua\
 $python\
+$java\
+$c\
+$cpp\
+$nodejs\
+$rust\
 $cmd_duration
 [╰ ](fg:purple)$character\
 """
@@ -17,10 +22,11 @@ $cmd_duration
 right_format = """
 $git_branch\
 $git_status\
+$package\
 $time\
 """
 
-palette = 'catppuccin_mocha'
+palette = 'catppuccin_tokyonight'
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -43,16 +49,20 @@ show_always = true
 
 [time]
 disabled = false
-time_format = "%I:%M"
+time_format = " %I:%M"
 format = '[ $time]($style) '
 utc_time_offset = "local"
 use_12hr = true
 style = 'italic dimmed lavender'
 
 [directory]
-style = "fg:crust bg:mauve"
 format = "[$path]($style)"
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)'
+style = "fg:crust bg:mauve"
+repo_root_style = "fg:crust bg:mauve bold italic"
+read_only = "  "
 home_symbol = ' 󰜥 '
+use_os_path_sep = true
 truncation_length = 3
 truncation_symbol = "  /"
 
@@ -65,16 +75,16 @@ truncation_symbol = "  /"
 
 [git_branch]
 symbol = ""
-style = "bold italic cyan"
+style = "bold italic blue6"
 format = "[ $symbol $branch ]($style)"
 
 [git_status]
 format = "([⎪$modified$untracked$staged$deleted$ahead$behind$renamed$stashed ⎪]($style))"
-style = "dimmed grey bold"
+style = "dimmed grey lavender"
 ahead = "[⎪  ($count)](bold flamingo)"
 behind = "[  ($count)](bold pink)"
 modified = "[  ($count)](bold green)"
-untracked = "[ 󰸳 ($count)](bold orange)"
+untracked = "[ 󰸶 ($count)](bold orange)"
 staged = "[ 󰍌 ($count)](bold blue5)"
 renamed = "[⎪  ($count)](bold sapphire)"
 stashed = '[  ($count)](bold sky)'
@@ -93,27 +103,61 @@ format = "([ $added]($added_style) )([ $deleted]($deleted_style) )"
 [cmd_duration]
 show_milliseconds = true
 format = "[  $duration ]($style)"
-style = "bold blue6"
+style = "bold yellow"
 disabled = false
 show_notifications = true
 min_time_to_notify = 35000
 
+[package]
+format = "[ 󰏓 $version]($style) "
+style = "bold sky"
+
 [conda]
-symbol = "  "
-style = "fg:crust bg:sapphire"
 format = '[$symbol$environment ]($style)'
+symbol = "  "
+style = ""
 ignore_base = false
 
 [python]
-symbol = " "
+format = '[ $symbol ([$version](bold teal))( \(󰌪 $virtualenv\))]($style)'
+symbol = ""
+style = "bold italic teal"
+
+[golang]
+format = "[ $symbol ([$version](bold cyan))]($style)"
+symbol = ""
+style = "bold italic cyan"
+
+[java]
+format = '[ $symbol $version]($style)'
+symbol = ""
+version_format = "v${raw}"
+style = "bold italic orange"
+
+[nodejs]
+format = '[ $symbol ([$version](bold tokyo_green))]($style)'
+symbol = ""
+style = "bold italic tokyo_green"
+
+[c]
+format = '[ $symbol $name [($version)](bold blue5)]($style)'
+symbol = ""
 style = "bold italic blue5"
-format = '[ $symbol($version)( \(󰌪 $virtualenv\))]($style)'
+
+[cpp]
+format = '[ $symbol $name [($version)](bold blue5)]($style)'
+symbol = ""
+style = "bold italic blue5"
+
+[rust]
+format = '[ $symbol [($version)](bold tokyo_red)( \($toolchain\))]($style)'
+symbol = ""
+style = "bold italic tokyo_red"
 
 [lua]
-disabled = false
-format = " [${symbol}${version}]($style)"
+format = '[ $symbol ($version)]($style)'
+symbol = ""
 version_format = "v${raw}"
-symbol = " "
 style = "bold blue2"
 
 [os.symbols]
@@ -138,7 +182,7 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
-[palettes.catppuccin_mocha]
+[palettes.catppuccin_tokyonight]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
 pink = "#f5c2e7"
@@ -166,20 +210,20 @@ base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
 
-tgreen = "#9ece6a"
+# ===== Tokyonight colors =====
+tokyo_green = "#9ece6a"
 green1 = "#73daca"
 green2 = "#41a6b5"
 magenta = "#bb9af7"
 magenta2 = "#ff007c"
 orange = "#ff9e64"
 purple = "#9d7cd8"
-tred = "#f7768e"
-tred1 = "#db4b4b"
-tteal = "#1abc9c"
-tyellow = "#e0af68"
-
-cyan = "#7dcfff"
-tblue = "#7aa2f7"
+tokyo_red = "#f7768e"
+tokyo_red1 = "#db4b4b"
+tokyo_teal = "#1abc9c"
+tokyo_yellow = "#e0af68"
+cyan = "#00ffff"
+tokyo_blue = "#7aa2f7"
 blue0 = "#3d59a1"
 blue1 = "#2ac3de"
 blue2 = "#0db9d7"
