@@ -53,7 +53,7 @@ time_format = " %I:%M"
 format = '[ $time]($style) '
 utc_time_offset = "local"
 use_12hr = true
-style = 'italic dimmed lavender'
+style = 'italic bold dimmed lavender'
 
 [directory]
 format = "[$path]($style)"
@@ -72,6 +72,14 @@ truncation_symbol = "  /"
 "Music" = " "
 "Pictures" = " "
 "Developer" = " "
+
+[cmd_duration]
+show_milliseconds = true
+format = "[  $duration ]($style)"
+style = "bold yellow"
+disabled = false
+show_notifications = true
+min_time_to_notify = 35000
 
 [git_branch]
 symbol = ""
@@ -100,14 +108,6 @@ ignore_submodules = false
 disabled = true
 format = "([ $added]($added_style) )([ $deleted]($deleted_style) )"
 
-[cmd_duration]
-show_milliseconds = true
-format = "[  $duration ]($style)"
-style = "bold yellow"
-disabled = false
-show_notifications = true
-min_time_to_notify = 35000
-
 [package]
 format = "[ 󰏓 $version]($style) "
 style = "bold sky"
@@ -129,7 +129,7 @@ symbol = ""
 style = "bold italic cyan"
 
 [java]
-format = '[ $symbol $version]($style)'
+format = '[ $symbol ([$version](bold orange))]($style)'
 symbol = ""
 version_format = "v${raw}"
 style = "bold italic orange"
