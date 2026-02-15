@@ -28,6 +28,8 @@ $time\
 
 palette = 'catppuccin_tokyonight'
 
+command_timeout = 1000
+
 # Inserts a blank line between shell prompts
 add_newline = true
 
@@ -87,10 +89,10 @@ style = "bold italic blue6"
 format = "[ $symbol $branch ]($style)"
 
 [git_status]
-format = "([⎪$modified$untracked$staged$deleted$ahead$behind$renamed$stashed ⎪]($style))"
+format = "([⎪$modified$untracked$staged$deleted$ahead_behind$renamed$stashed ⎪]($style))"
 style = "dimmed grey lavender"
-ahead = "[⎪  ($count)](bold flamingo)"
-behind = "[  ($count)](bold pink)"
+ahead = "[  ${count}](bold pink)"
+behind = "[  ${count}](bold pink)"
 modified = "[  ($count)](bold green)"
 untracked = "[ 󰸶 ($count)](bold orange)"
 staged = "[ 󰍌 ($count)](bold blue5)"
