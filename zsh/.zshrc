@@ -107,10 +107,10 @@ alias ltg="eza -alhT --classify=auto --git --git-repos --show-symlinks --icons=a
 
 
 # oh-my-posh
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.poshthemes/nocturnal.omp.json)"
 
 # starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
