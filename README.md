@@ -1,10 +1,10 @@
 <h1 align="center"> 🍵 Dotfiles </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Editor-Lazyvim%20%7C%20NvChad-CBA6F7?style=for-the-badge&logo=neovim&logoColor=cdd6f4&logoSize=auto&labelColor=302D41&color=90e0ef">
-  <img alt="Static Badge" src="https://img.shields.io/badge/shell-zsh%20%7C%20bash-f5c2e7?style=for-the-badge&logo=GNU%20bash&logoColor=cdd6f4&labelColor=302D41">
+  <img src="https://img.shields.io/badge/Editor-Lazyvim%20%7C%20NvChad-CBA6F7?style=for-the-badge&logo=neovim&logoColor=cdd6f4&logoSize=auto&labelColor=302D41&color=74c7ec">
+  <img alt="Static Badge" src="https://img.shields.io/badge/shell-zsh%20%7C%20bash-fab387?style=for-the-badge&logo=GNU%20bash&logoColor=cdd6f4&labelColor=302D41">
   <img alt="Static Badge" src="https://img.shields.io/badge/os-windows%20%7C%20WSL%20%7C%20Linux-cba6f7?style=for-the-badge&logo=linux&logoColor=cdd6f4&labelColor=302D41">
-  <img alt="Static Badge" src="https://img.shields.io/badge/prompt-oh%20my%20posh-b4befe?style=for-the-badge&logo=starship&logoColor=cdd6f4&labelColor=302D41">
+  <img alt="Static Badge" src="https://img.shields.io/badge/prompt-Starship-b4befe?style=for-the-badge&logo=starship&logoColor=cdd6f4&labelColor=302D41">
   <img alt="Static Badge" src="https://img.shields.io/badge/terminal-tmux-a6e3a1?style=for-the-badge&logo=tmux&logoColor=cdd6f4&labelColor=302D41">
 </p>
 
@@ -26,7 +26,7 @@ These configurations are designed for my personal use but can serve as a useful 
 
 - ❄️ **Development** Tools
 - \>\_ Sleek **Terminal** Config
-- 🎨 **Oh My Posh** Prompt Style
+- 🎨 **Starship** Prompt Style
 - ⚙️ [**WSL2**](https://learn.microsoft.com/en-us/windows/wsl/) Integration
 - 💫 Beautiful [**Wallpapers**]()
 - 🐈 **Soothing themes** everywhere
@@ -84,12 +84,12 @@ Here is all the information about my setup and tools:
 <summary><b>🌟 Core Development</b></summary>
 <br>
 
-| ⛓️ Tool                                     | 📝 Description            | ✨ Features                                                                                                    | ⚙️ Config                                                                  |
-| ------------------------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| 💤 [**Lazyvim**](http://www.lazyvim.org/)   | **Lazyvim configuration** | • IDE-like features<br>• Modern Tools<br>• Soothing Multiple Themes                                            | [**⚙️ Lazyvim**](https://github.com/abhicodes07/Lazyvim.git)               |
-| 🚀 [**ohmyposh**](https://ohmyposh.dev/)    | **Cross-shell Prompt**    | • Nocturnal theme<br>• Git status integration<br>• Context-aware display                                       |                                                                            |
-| 🖥️ [**Tmux**](https://github.com/tmux/tmux) | **Terminal multiplexer**  | • Custom key bindings<br>• Catppuccin Theme<br>• Nerd Icons                                                    | [**⚙️ tmux.conf**](https://github.com/abhicodes07/dotfiles/tree/main/tmux) |
-| \>\_ [**Zsh**](https://zsh.sourceforge.io/) | **Shell**                 | • Smart shell detection and adaptation<br>• Enhanced history with timestamps<br>• Modern CLI tools integration | [**⚙️ .zshrc**](https://github.com/abhicodes07/dotfiles/tree/main/zsh/)    |
+| ⛓️ Tool                                     | 📝 Description            | ✨ Features                                                                                                    | ⚙️ Config                                                                     |
+| ------------------------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 💤 [**Lazyvim**](http://www.lazyvim.org/)   | **Lazyvim configuration** | • IDE-like features<br>• Modern Tools<br>• Soothing Multiple Themes                                            | [**⚙️ Lazyvim**](https://github.com/abhicodes07/Lazyvim.git)                  |
+| 🚀 [**Starship**](https://starship.rs/)     | **Cross-shell Prompt**    | • Custom theme<br>• Git metrices and status<br>• Context-aware display                                         | [**⚙️ Starship**](https://github.com/abhicodes07/dotfiles/tree/main/starship) |
+| 🖥️ [**Tmux**](https://github.com/tmux/tmux) | **Terminal multiplexer**  | • Custom key bindings<br>• Catppuccin Theme<br>• Nerd Icons                                                    | [**⚙️ tmux.conf**](https://github.com/abhicodes07/dotfiles/tree/main/tmux)    |
+| \>\_ [**Zsh**](https://zsh.sourceforge.io/) | **Shell**                 | • Smart shell detection and adaptation<br>• Enhanced history with timestamps<br>• Modern CLI tools integration | [**⚙️ .zshrc**](https://github.com/abhicodes07/dotfiles/tree/main/zsh/)       |
 
 </details>
 
@@ -252,6 +252,7 @@ lta         # Tree file listing with icons
 ltg         # Git tree files with icons
 fzf         # Fuzzy finder
 yazi        # file manager
+nvims       # Neovim config switcher
 ```
 
 **🪄 Key Features:**
@@ -290,7 +291,7 @@ Head over to the [Discussions](https://github.com/abhicodes07/dotfiles/discussio
 </p>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/License-mit-CBA6F7?style=for-the-badge&logoColor=white&logoSize=auto&labelColor=302D41&color=CBA6F7&link=https%3A%2F%2Fgithub.com%2Fabhicodes07%2Fdotfiles%2Fblob%2Fmain%2FLICENSE" alt="LICENSE">
+  <img src="https://img.shields.io/badge/License-mit-CBA6F7?style=for-the-badge&logoColor=white&logoSize=auto&labelColor=302D41&color=00ffff&link=https%3A%2F%2Fgithub.com%2Fabhicodes07%2Fdotfiles%2Fblob%2Fmain%2FLICENSE" alt="LICENSE">
 </div>
 
 <p align="center">
