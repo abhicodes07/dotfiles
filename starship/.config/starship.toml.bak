@@ -1,0 +1,232 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[╭](purple)\
+$os\
+$username\
+[](fg:purple bg:mauve)\
+$directory\
+[](fg:mauve)\
+$lua\
+$python\
+$java\
+$c\
+$cpp\
+$nodejs\
+$rust\
+$cmd_duration
+[╰ ](fg:purple)$character\
+"""
+
+right_format = """
+$git_branch\
+$git_status\
+$package\
+$time\
+"""
+
+palette = 'catppuccin_tokyonight'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[](bold red)'
+vimcmd_symbol = "[■](italic dimmed green)"
+
+[os]
+disabled = false
+format = '[$symbol ]($style)'
+style = 'bg:purple fg:crust'
+
+[username]
+disabled = false
+format = '[$user]($style)'
+style_user = 'bold bg:purple fg:crust'
+show_always = true
+
+[time]
+disabled = false
+time_format = " %I:%M"
+format = '[ $time]($style) '
+utc_time_offset = "local"
+use_12hr = true
+style = 'italic bold dimmed lavender'
+
+[directory]
+format = "[$path]($style)"
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)'
+style = "fg:crust bg:mauve"
+repo_root_style = "fg:crust bg:mauve bold italic"
+read_only = "  "
+home_symbol = ' 󰜥 '
+use_os_path_sep = true
+truncation_length = 3
+truncation_symbol = "  /"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Developer" = " "
+
+[cmd_duration]
+show_milliseconds = true
+format = "[  $duration ]($style)"
+style = "bold yellow"
+disabled = false
+show_notifications = true
+min_time_to_notify = 35000
+
+[git_branch]
+symbol = ""
+style = "bold italic blue6"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+format = "([⎪$modified$untracked$staged$deleted$ahead$behind$renamed$stashed ⎪]($style))"
+style = "dimmed grey lavender"
+ahead = "[⎪  ($count)](bold flamingo)"
+behind = "[  ($count)](bold pink)"
+modified = "[  ($count)](bold green)"
+untracked = "[ 󰸶 ($count)](bold orange)"
+staged = "[ 󰍌 ($count)](bold blue5)"
+renamed = "[⎪  ($count)](bold sapphire)"
+stashed = '[  ($count)](bold sky)'
+deleted = "[  ($count)](bold magenta)"
+typechanged = ""
+disabled = false
+ignore_submodules = false
+
+[git_metrics]
+added_style = "bold green"
+deleted_style = "bold red"
+ignore_submodules = false
+disabled = true
+format = "([ $added]($added_style) )([ $deleted]($deleted_style) )"
+
+[package]
+format = "[ 󰏓 $version]($style) "
+style = "bold sky"
+
+[conda]
+format = '[$symbol$environment ]($style)'
+symbol = "  "
+style = ""
+ignore_base = false
+
+[python]
+format = '[ $symbol ([$version](bold teal))( \(󰌪 $virtualenv\))]($style)'
+symbol = ""
+style = "bold italic teal"
+
+[golang]
+format = "[ $symbol ([$version](bold cyan))]($style)"
+symbol = ""
+style = "bold italic cyan"
+
+[java]
+format = '[ $symbol ([$version](bold orange))]($style)'
+symbol = ""
+version_format = "v${raw}"
+style = "bold italic orange"
+
+[nodejs]
+format = '[ $symbol ([$version](bold tokyo_green))]($style)'
+symbol = ""
+style = "bold italic tokyo_green"
+
+[c]
+format = '[ $symbol $name [($version)](bold blue5)]($style)'
+symbol = ""
+style = "bold italic blue5"
+
+[cpp]
+format = '[ $symbol $name [($version)](bold blue5)]($style)'
+symbol = ""
+style = "bold italic blue5"
+
+[rust]
+format = '[ $symbol [($version)](bold tokyo_red)( \($toolchain\))]($style)'
+symbol = ""
+style = "bold italic tokyo_red"
+
+[lua]
+format = '[ $symbol ($version)]($style)'
+symbol = ""
+version_format = "v${raw}"
+style = "bold blue2"
+
+[os.symbols]
+Windows = ""
+Ubuntu = ""
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[palettes.catppuccin_tokyonight]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+# ===== Tokyonight colors =====
+tokyo_green = "#9ece6a"
+green1 = "#73daca"
+green2 = "#41a6b5"
+magenta = "#bb9af7"
+magenta2 = "#ff007c"
+orange = "#ff9e64"
+purple = "#9d7cd8"
+tokyo_red = "#f7768e"
+tokyo_red1 = "#db4b4b"
+tokyo_teal = "#1abc9c"
+tokyo_yellow = "#e0af68"
+cyan = "#00ffff"
+tokyo_blue = "#7aa2f7"
+blue0 = "#3d59a1"
+blue1 = "#2ac3de"
+blue2 = "#0db9d7"
+blue5 = "#89ddff"
+blue6 = "#b4f9f8"
+blue7 = "#394b70"
