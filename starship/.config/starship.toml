@@ -112,7 +112,7 @@ format = "([ $added]($added_style) )([ $deleted]($deleted_style) )"
 
 [package]
 format = "[ 󰏓 $version]($style) "
-style = "bold sky"
+style = "bold peach"
 
 [conda]
 format = '[$symbol$environment ]($style)'
@@ -121,9 +121,9 @@ style = ""
 ignore_base = false
 
 [python]
-format = '[ $symbol ([$version](bold teal))( \(󰌪 $virtualenv\))]($style)'
+format = '[ ([$symbol $version](bold cyan))( \(󰌪 $virtualenv\))]($style)'
 symbol = ""
-style = "bold italic teal"
+style = "bold italic tokyo_green"
 
 [golang]
 format = "[ $symbol ([$version](bold cyan))]($style)"
