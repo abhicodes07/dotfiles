@@ -78,7 +78,7 @@ Here is all the information about my setup and tools:
 > [!TIP]
 >
 > Some of these tools have the **config files** included in the repo, which are marked with ⚙️,
-> so you can **Cherry-pick** what you need.
+> so you can **Cherry-pick** whatever you require.
 
 <details>
 <summary><b>🌟 Core Development</b></summary>
@@ -152,15 +152,27 @@ For WSL2 users, make sure to set the Nerd Font in your Windows Terminal settings
 - Clone the `dotfiles` repository along with its submodules:
 
 ```bash
-git clone --recursive https://github.com/abhicodes07/dotfiles ~/dotfiles
+git clone --recursive https://github.com/abhicodes07/dotfiles ~/.dotfiles
 ```
 
 - If you have already cloned it without submodules initialized, run:
 
 ```bash
-cd ~/dotfiles
+cd ~/.dotfiles
 git submodule init
 git submodule update
+```
+
+</details>
+
+<details>
+<summary><b>🔨 Manual Installation</b></summary>
+<br>
+
+- Manually create symbolic links for the particular configurations you want to use, for example:
+
+```bash
+ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ```
 
 </details>
@@ -169,38 +181,36 @@ git submodule update
 <summary><b>🏗️ Setting Up Dotfiles Using GNU Stow</b></summary>
 <br>
 
-- GNU Stow simplifies managing dotfiles across different directories. Each subdirectory of `~/dotfiles` contains configurations for specific tools.
+- GNU Stow simplifies managing dotfiles across different directories. Each subdirectory of `~/.dotfiles` contains configurations for specific tools.
 
-### Step 1: Navigate to the Repository
-
-```bash
-cd ~/dotfiles
-```
-
-### Step 2: Remove Existing Configuration Files
+### Step 1: Remove Existing Configuration Files
 
 - Before stowing files, ensure conflicting configuration files are removed or backed up:
 
 ```bash
-rm -rf ~/.config/Lazyvim
-rm -rf ~/.zshrc ~/.bashrc
+rm -rf ~/.config/nvim
+# depends on your shell
+rm -rf ~/.zshrc
+```
+
+### Step 2: Navigate to the Repository
+
+```bash
+cd ~/.dotfiles
 ```
 
 ### Step 3: Symlink Dotfiles to Relevant Directories
 
-- Use GNU Stow to create symlinks for configuration files:
+- Use `stow` command to create symlinks for configuration files you want to use:
 
 ```bash
-stow -t ~/ bash
-stow -t ~/ zsh
-stow -t ~/.config Lazyvim
+stow bash
+stow zsh
+stow Lazyvim
 ```
 
 - Use the similar commands for the other configurations too.
 
-Here:
-
-- `-t` specifies the target directory (e.g., `~/`, or `~/.config`).
 </details>
 
 <details>
@@ -211,7 +221,7 @@ Here:
 - Sync your dotfiles with the latest changes:
 
 ```bash
-cd ~/dotfiles
+cd ~/.dotfiles
 git pull
 ```
 
@@ -220,7 +230,7 @@ git pull
 - Fetch the latest changes to submodules:
 
 ```bash
-cd ~/dotfiles
+cd ~/.dotfiles
 git submodule update --remote Lazyvim
 ```
 
@@ -233,9 +243,9 @@ git submodule update --remote Lazyvim
 - If you want to remove all symlinks:
 
 ```bash
-stow -D -t ~/ bash
-stow -D -t ~/ zsh
-stow -D -t ~/.config Lazyvim
+stow -D bash
+stow -D zsh
+stow -D Lazyvim
 ```
 
 </details>
