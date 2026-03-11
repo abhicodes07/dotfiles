@@ -90,13 +90,13 @@ format = "[ $symbol $branch ]($style)"
 
 [git_status]
 format = "([⎪$modified$untracked$staged$deleted$ahead_behind$renamed$stashed ⎪]($style))"
-style = "dimmed grey lavender"
+style = "dimmed lavender"
 ahead = "[  ${count}](bold pink)"
 behind = "[  ${count}](bold pink)"
 modified = "[  ($count)](bold green)"
 untracked = "[ 󰸶 ($count)](bold orange)"
 staged = "[ 󰍌 ($count)](bold blue5)"
-renamed = "[⎪  ($count)](bold sapphire)"
+renamed = "[ [⎪](dimmed lavender)  ($count)](bold sapphire)"
 stashed = '[  ($count)](bold sky)'
 deleted = "[  ($count)](bold magenta)"
 typechanged = ""
