@@ -92,6 +92,9 @@ alias lg="eza -alh --classify=auto --git --git-repos --show-symlinks --icons=alw
 # Tree view (simplified)
 alias lt="eza -alhT --classify=auto --show-symlinks --icons=always --ignore-glob='.git|.venv' --time-style relative"
 
+# Tree view (simplest)
+alias lts="eza -alhT --classify=auto --show-symlinks --icons=never --no-user --no-filesize --no-time --no-permissions --ignore-glob='.git|.venv|venv'"
+
 # Tree view (directories only)
 alias ltd="eza -ahTD --classify=auto --show-symlinks --no-permissions --no-filesize --no-user --icons=always --ignore-glob='.git|.venv' --time-style relative"
 
