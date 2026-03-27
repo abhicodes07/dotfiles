@@ -3,8 +3,8 @@
   "logo": {
     "type": "chafa",
     "width": 60,
-    "printRemaining": false,
-    "source": "~/.config/dont_worry_itll_work_out_somehow.png",
+    "printRemaining": true,
+    "source": "~/.config/assets/foxy3.png",
     // "recache": true,
     "chafa": {
       "symbols": "-block-border-space+vhalf",
