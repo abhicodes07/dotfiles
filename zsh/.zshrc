@@ -121,6 +121,8 @@ eval "$(zoxide init zsh)"
 # Custom environment
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
+# grc frontend for generic colorizer
+[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh
 
 # ============================================================================
 # ADDITIONAL CONFIGURATION
