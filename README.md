@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="assets/neovim.png" alt="neovim"></img>
+  <img src="assets/lazyvim.png" alt="neovim"></img>
 </div>
 
 ## 🌺 About
@@ -272,12 +272,6 @@ nvims       # Neovim config switcher
 - Cross-platform environment variables and platform detection
 - Files, PDFs and image viewing using `yazi`
 - Aesthetic file listing with `eza` enabled aliases
-
-### 💤 Neovim config switcher
-
-- Switch between multiple **Neovim** configurations using custom script and `nvims` command
-
-![](assets/nvims.png)
 
 ## 📢 Discussions
 
